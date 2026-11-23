@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prelabs and lab reports from the RADIO laboratory.">
+  <meta name="theme-color" content="#f8f9fd">
+  <title>RADIO · Lab Archive</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/archive.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#archive">Skip to documents</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./"><img src="assets/favicon.svg" alt="" width="38" height="38"> RADIO</a>
+      <a class="guide-link" href="#publishing">Publishing guide</a>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <h1 id="page-title">RADIO Lab<br>Archive</h1>
+        <p>Prelabs and lab reports.</p>
+        <a class="hero-link" href="#archive">Browse documents</a>
+      </div>
+    </section>
+
+    <section class="archive" id="archive" aria-labelledby="archive-title">
+      <div class="section-heading">
+        <h2 id="archive-title">Documents</h2>
+        <p class="result-count" id="result-count" aria-live="polite" aria-atomic="true"><!--INITIAL_COUNT--></p>
+      </div>
+
+      <div class="toolbar" id="toolbar" hidden>
+        <div class="filters" role="group" aria-label="Document type">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="prelabs" aria-pressed="false">Prelabs</button>
+          <button type="button" data-filter="lab-reports" aria-pressed="false">Lab reports</button>
+        </div>
+        <label class="search">
+          <span class="sr-only">Search documents</span>
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="search" type="search" placeholder="Search documents">
+        </label>
+      </div>
+
+      <ul class="report-list" id="report-list">
+<!--REPORT_ROWS-->
+      </ul>
+
+      <div class="empty-state" id="empty-state" <!--EMPTY_STATE_ATTRIBUTE-->>
+        <span class="file-icon" aria-hidden="true">PDF</span>
+        <div>
+          <h3 id="empty-title">No documents yet</h3>
+          <p id="empty-description">Published prelabs and lab reports will appear here.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="publishing" id="publishing" aria-labelledby="publishing-title">
+      <h2 id="publishing-title">Add a PDF</h2>
+      <p>Upload the PDF to its folder in the GitHub repository and commit to <code>main</code>. The site updates automatically.</p>
+      <dl>
+        <div><dt>Prelabs</dt><dd><code>reports/prelabs/</code></dd></div>
+        <div><dt>Lab reports</dt><dd><code>reports/lab-reports/</code></dd></div>
+      </dl>
+    </section>
+  </main>
+</body>
+</html>
